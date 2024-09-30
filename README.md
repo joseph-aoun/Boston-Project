@@ -2,11 +2,11 @@
 
 **Note:** A majority of the information below was taken from the Spark! document provided [here](https://docs.google.com/document/d/1s_OOKYuMY0NAXTanh5ElXVzlXIaA8Yr_28oRL6CbOsw/edit). Much of this document is subject to change as the class progresses (we will be learning new data science tools and methodologies). 
 
-## Description of the project:
+## What is the description of the project?
 
 Each year, the City of Boston establishes a total amount for its operating and capital budgets. The operating budget focuses on covering everyday expenses for the city, such as paying personnel like teachers, police officers, and firefighters, as well as funding services like housing, recycling, and transportation. The capital budget, funded through a mix of sources like bonds, city funds, and grants (state, federal, or private), is aimed at acquiring or enhancing the city's physical assets and financing the related work. This project seeks to analyze how these budgets are allocated.
 
-## Clear goal(s):
+## What are the clear goal(s)?
 
 For the **BASE** project:
 
@@ -16,7 +16,7 @@ For the **EXTENDED** project:
 
 - Economic analysis (how has housing cost or rental prices, for example, impacted the city’s spending on affordable housing?) There are a variety of data sets available here and ideas for other economic variables here.
 
-## What data needs to be collected and how you will collect it:
+## What data do you need to gather and how will you collect it?
 
 Data is already provided for us by Spark!
 
@@ -33,7 +33,7 @@ For the **EXTENDED** project:
 - [FRED Economic Data for Boston](https://fred.stlouisfed.org/tags/series?t=boston)
 - [Economic Variables](https://www.bostonplans.org/getattachment/c4bc18e1-d0a6-45dc-b26d-902078e6a491)
 
-## How you plan on modeling the data: 
+## How you plan on modeling the data?
 
 - Linear regression
 - Clustering.
@@ -41,7 +41,7 @@ For the **EXTENDED** project:
 - Time-series analysis.
 - Neural networks.
 
-## How do you plan on visualizing the data? (e.g. interactive t-SNE plot, scatter plot of feature x vs. feature y)
+## How do you plan on visualizing the data?
 
 Our group plans on using a [website](https://www.data-to-viz.com/) to help us decide what visualizations we can make.
 
