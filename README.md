@@ -4,20 +4,23 @@
 
 The operating budget is the expenses generated to run the government on a day-to-day basis. This dataset contains columns such as Department, Programs, FY22 spending, FY23 Spending, FY24 spending, and the budget for FY25. ‘FY’ in this case refers to Fiscal Year, which means a one year period that the government or other organization used for financial reporting. When looking at this dataset, there was a lot of missing data (seen as ‘#Missing’ in the operating budget, which was replaced by 0). Some programs have missing data for the fiscal year of FY22 - FY24. We removed them for this visualization.
 
-![plot](./images/vi-figure-1.jpeg)
 
 ### Program Spending
 
 The "Top 10 Programs by Largest Spending (FY22 - FY24)" bar chart displays the most significant financial allocations across various programs within a specified period, emphasizing the key areas where funds are primarily directed. The program with the highest spending is "Pensions," with expenditures exceeding $1 billion, signifying a substantial investment in retiree benefits. Following closely are "BPS Finance" and "BPS Operations," highlighting significant funding for Boston Public Schools' administrative and operational costs. Other high-expenditure areas include "Charter School Tuition," "Boston Fire Suppression," and "Health Insurance," illustrating priorities in education, public safety, and employee benefits. "Bureau of Field Services" and "Debt Service" also command notable portions of the budget, reflecting essential services and fiscal responsibilities. Programs for "K-8" and "Elementary" education round out the top ten, indicating strong support for foundational educational services. This distribution of funds underscores a balanced approach to addressing pensions, education, public safety, and essential services in the city's budget strategy.
 
+![plot](./images/vi-figure-1.jpeg)
 
 
 The bar chart titled "Top 10 Programs by Smallest Total Spending (FY22 - FY24)" highlights the programs that received the lowest funding within this period, with allocations generally below $0.3 million. "Human Rights History" and "Equity & Inclusion History" are the least funded programs, reflecting a minimal budget allocation towards these historical and social initiatives. Other low-funded areas include "Internal Affairs Oversight Panel (IOAP)" and "Trust," suggesting limited financial support for oversight and trust-building functions. Programs like "Civilian Review Board (CRB)," "Consumer Affairs," and "Diversity" receive modest funding, indicating these areas are relatively low on the city's fiscal priorities. Meanwhile, "Coordinated Response Team," "Grants Administration," and "Tourism" have slightly higher, yet still minimal, budgets, showing restrained investments in emergency response coordination, administrative support, and tourism. Overall, these allocations suggest that, compared to other sectors, these programs are designated as lower-priority areas within the city's budgetary strategy.
 
 
+![plot](./images/vi-figure-2.jpeg)
 
 
 The chart displays the top 10 programs in Boston with the highest budget growth from fiscal year 2022 (FY22) to fiscal year 2024 (FY24), reflecting key city priorities. Leading with around 600% growth, the Trust program tops the list, followed closely by Revenue Monitoring at approximately 550%, signaling a focus on revenue oversight. Programs related to Equity and Affirmative Action saw growth near 500% and 400%, respectively, indicating a strong commitment to inclusion and diversity. The Mayor’s Office of Community Safety experienced similar growth, emphasizing public safety. Programs like Program & Partnerships and Turnaround and Transformation grew around 300%, likely supporting reform and collaboration efforts. Additionally, significant investments in LCA (Language and Communication Access), Office of Civic Organizing, and Small & Local Business reveal a focus on civic engagement and local economic development. These budgetary increases demonstrate Boston’s strategic emphasis on equity, safety, financial stability, and economic support for local communities. Future analysis could examine the impacts of these investments to ensure they achieve the intended social and economic outcomes.
+
+![plot](./images/vi-figure-3.jpeg)
 
 
 ## Capital Budget
@@ -31,10 +34,14 @@ We examined the capital budget by geography (neighborhood) to understand if fund
 
 **Total Project Budget by Neighborhood**
 
+![plot](./images/george-figure-1.jpeg)
+
 Citywide received the most funding overall, which makes sense as this allocation likely funds projects that benefit the entire city.
 Among specific neighborhoods, Charlestown and Downtown/Government Center received some of the highest funding allocations, with Roxbury also receiving substantial funds. These areas may have high project needs, such as infrastructure improvements or community development projects.
 
 **Distribution of Project Status**
+
+![plot](./images/george-figure-2.jpeg)
 
 This pie chart shows the distribution of project statuses for Boston’s FY25 capital projects, providing insight into the stages of various city initiatives.
 The high proportion of projects "In Design" and "To Be Scheduled" suggests a focus on forward planning and preparation.
@@ -42,6 +49,7 @@ Meanwhile, the "Annual Program" and "In Construction" categories show that the c
 
 **Per Capita Spending by Geography**
 
+![plot](./images/george-figure-3.jpeg)
 
 The Capital dataset didn't include population, so we gathered population data from the 2020 Census, aligned neighborhood names, merged it with Boston’s capital budget data, and calculated per capita spending. This process enabled a meaningful comparison of budget allocations relative to population, helping to reveal potential geographic disparities in funding.
 
@@ -64,6 +72,10 @@ The clear leader in financing is going to be the Boston Public School Department
 A lot of the spending is going to be directed towards the Public Works Department. The city is planning to renew its infrastructure and the allocated costs show this very well. Worth noting,  the mentioned department also covers a lot of environment-directed initiatives such as recycling and waste management, which became a trend in big cities over the recent time.
 Further, a lot is also invested in renovating the city as a whole as Property Management and Park and Recreation are the next 2 biggest spending categories. A lot of space planning and maintenance repairs are going to be done by the city within the next 5 years.
 
+![plot](./images/daniel-figure-1.jpeg)
+
+![plot](./images/daniel-figure-2.jpeg)
+
 ## Checkbook Data
 
 ### General Information
@@ -84,8 +96,10 @@ This is where the heavy lifting happens for combining fiscal years 2011 - 2024. 
 ### Preliminary Analysis
 Our group had to map departments to their assigned cabinets, this was done by looking at the Boston city government structure (https://www.boston.gov/departments/311/city-boston-government) on their official website and the operating budget dataset. Then, we aggregated total expenditures made by each cabinet per month and graphed the trend lines below.
 
+![plot](./images/matthew-figure-1.jpeg)
+
 As expected, the education cabinet which only contains the Boston Public School department, has made plenty of expenditures month-over-month. It is expected to see fluctuations in spending (as we shouldn’t see a cabinet consistently spending high amounts of money every single month). However, it is interesting to note that spending seems to have increased significantly past the year 2022. This could reflect the introduction of new programs meant for students or new facilities being built.
 
-
+![plot](./images/matthew-figure-2.jpeg)
 
 Here is an interesting case with the Equity & Inclusion Cabinet. We actually see little to no spending prior to the year 2020, however, around the year 2021 we notice a significant increase in spending by this cabinet. This timing aligns with broader societal shifts and Boston's enhanced focus on equity initiatives surrounding racial justice movements and communities of color. The increased spending reflects the City's commitment to addressing systemic inequities through dedicated resources and programs. It's worth noting that prior to 2020, equity and inclusion initiatives may have been distributed across other departments or cabinets, making it harder to track total spending in these areas.
