@@ -1,90 +1,89 @@
-# CS506-Final-Project
+# CS 506 Boston Budget Final Project
 
-**Note:** A majority of the information below was taken from the Spark! document provided [here](https://docs.google.com/document/d/1s_OOKYuMY0NAXTanh5ElXVzlXIaA8Yr_28oRL6CbOsw/edit). Much of this document is subject to change as the class progresses (we will be learning new data science tools and methodologies). 
+## Operating Budget
 
-## What is the description of the project?
+The operating budget is the expenses generated to run the government on a day-to-day basis. This dataset contains columns such as Department, Programs, FY22 spending, FY23 Spending, FY24 spending, and the budget for FY25. ‘FY’ in this case refers to Fiscal Year, which means a one year period that the government or other organization used for financial reporting. When looking at this dataset, there was a lot of missing data (seen as ‘#Missing’ in the operating budget, which was replaced by 0). Some programs have missing data for the fiscal year of FY22 - FY24. We removed them for this visualization.
 
-Each year, the City of Boston establishes a total amount for its operating and capital budgets. The operating budget focuses on covering everyday expenses for the city, such as paying personnel like teachers, police officers, and firefighters, as well as funding services like housing, recycling, and transportation. The capital budget, funded through a mix of sources like bonds, city funds, and grants (state, federal, or private), is aimed at acquiring or enhancing the city's physical assets and financing the related work. This project seeks to analyze how these budgets are allocated.
+### Program Spending
 
-## What are the clear goal(s)?
+The "Top 10 Programs by Largest Spending (FY22 - FY24)" bar chart displays the most significant financial allocations across various programs within a specified period, emphasizing the key areas where funds are primarily directed. The program with the highest spending is "Pensions," with expenditures exceeding $1 billion, signifying a substantial investment in retiree benefits. Following closely are "BPS Finance" and "BPS Operations," highlighting significant funding for Boston Public Schools' administrative and operational costs. Other high-expenditure areas include "Charter School Tuition," "Boston Fire Suppression," and "Health Insurance," illustrating priorities in education, public safety, and employee benefits. "Bureau of Field Services" and "Debt Service" also command notable portions of the budget, reflecting essential services and fiscal responsibilities. Programs for "K-8" and "Elementary" education round out the top ten, indicating strong support for foundational educational services. This distribution of funds underscores a balanced approach to addressing pensions, education, public safety, and essential services in the city's budget strategy.
 
-For the **BASE** project (main part we are trying to accomplish at the end of the semester):
 
-- Perform exploratory data analysis with around 5 to 7 visualizations (and discuss any initial patterns that can be explored further). Most of the goals are pretty similar, just different categories to group by.
-  - **SPENDING BY DEPARTMENT** Analyze how the budget is distributed among various city departments (e.g., police, education, health, transportation) over time.
-    - Which departments have seen the largest budget increases or cuts?
-    - Are certain deparmtnets consistently under or over projected budget?
-    - *METRIC* Percentage change in spending per department year-over-year.
-    - *METRIC* Comparison between projected vs. actualy spending per department.
-  - **SPENDING BY BUDGET** Break down the spending into categories such as salaries, infrastructure, public servfices, etc., and analyze how the alloation within each category has shifted.
-    - Are there any shifts in budget priorities?  (e.g. increased spending on health services vs. infrastructure)
-    - Which categories are consistently growing or shrinking?
-    - *METRIC* Breakdown of the percentage of the budget allocated to each category.
-    - *METRIC* Year-over-year changes in each category.
-  - **SPENDING BY GEOGRAPHY** Identify geographical areas (e.g., districts, neighborhoods) receiving the most/least funding.
-    - Which areas receive the most funding, and how does this compare to population or other needs-based factors?
-    - Are there geographic disparities in spending?
-    - *METRIC* Total spending by geography.
-    - *METRIC* Per capita spending by geography (spending per resident in each area).
-  - **SPENDING BY PROGRAM** Analyze spending by specific programs (e.g., education programs, health initiatives, public safety programs).
-    - Are certain programs consistently over/under budget?
-    - How has funding for specific programs evolved over time?
-    - *METRIC* Total and per capita spending on key programs.
-    - *METRIC* Projected vs. actual spending on major programs.
-  - **PER CAPITA SPENDING** Measure spending per capita (for example, per citizen or per child in schools) to assess how equitably funds are distributed relative to the population.
-    - Are certain areas or programs underfunded when adjusted for population size?
-    - How has per capita spending changed over time?
-    - *METRIC* Spending per capita for each department, category, or geography.
 
-For the **EXTENDED** project (optional, if we have time):
+The bar chart titled "Top 10 Programs by Smallest Total Spending (FY22 - FY24)" highlights the programs that received the lowest funding within this period, with allocations generally below $0.3 million. "Human Rights History" and "Equity & Inclusion History" are the least funded programs, reflecting a minimal budget allocation towards these historical and social initiatives. Other low-funded areas include "Internal Affairs Oversight Panel (IOAP)" and "Trust," suggesting limited financial support for oversight and trust-building functions. Programs like "Civilian Review Board (CRB)," "Consumer Affairs," and "Diversity" receive modest funding, indicating these areas are relatively low on the city's fiscal priorities. Meanwhile, "Coordinated Response Team," "Grants Administration," and "Tourism" have slightly higher, yet still minimal, budgets, showing restrained investments in emergency response coordination, administrative support, and tourism. Overall, these allocations suggest that, compared to other sectors, these programs are designated as lower-priority areas within the city's budgetary strategy.
 
-- How has housing cost or rental prices impacted the city’s spending on affordable housing?
-  - Is there a direct correlation between rising housing costs and increased budget allocation to affordable housing programs?
-- What other economic factors have influenced changes in Boston’s budget allocation?
-  - Are there any patterns of budget changes that align with broader economic trends?
-- How has the city's revenue stream influenced spending?
-  - What role do non-tax revenue sources, such as grants or federal funding, play in shaping specific budget allocations?
 
-## What data do you need to gather and how will you collect it?
 
-Data is already provided for us by Spark!
 
-For the **BASE** project:
+The chart displays the top 10 programs in Boston with the highest budget growth from fiscal year 2022 (FY22) to fiscal year 2024 (FY24), reflecting key city priorities. Leading with around 600% growth, the Trust program tops the list, followed closely by Revenue Monitoring at approximately 550%, signaling a focus on revenue oversight. Programs related to Equity and Affirmative Action saw growth near 500% and 400%, respectively, indicating a strong commitment to inclusion and diversity. The Mayor’s Office of Community Safety experienced similar growth, emphasizing public safety. Programs like Program & Partnerships and Turnaround and Transformation grew around 300%, likely supporting reform and collaboration efforts. Additionally, significant investments in LCA (Language and Communication Access), Office of Civic Organizing, and Small & Local Business reveal a focus on civic engagement and local economic development. These budgetary increases demonstrate Boston’s strategic emphasis on equity, safety, financial stability, and economic support for local communities. Future analysis could examine the impacts of these investments to ensure they achieve the intended social and economic outcomes.
 
-- Operating Budget Data: This dataset should include the detailed breakdown of the operating budget for the City of Boston. It should provide information on the budget allocations for different departments, services, and personnel expenses such as teachers, police officers, and firefighters.
-  [2024 Future: FY24 RECOMMENDED OPERATING BUDGET](https://data.boston.gov/dataset/operating-budget/resource/8f2971f0-7a0d-401d-8376-0289e3b810ba)
-- Capital Budget Data: This dataset should include the capital budget for the City of Boston, specifying the funding sources, project descriptions, and budget allocations for acquiring or improving physical assets owned by the city.
-  [2024 Future: FY24 RECOMMENDED CAPITAL BUDGET PLAN](https://data.boston.gov/dataset/capital-budget/resource/c62d666e-27ea-4c03-9cb1-d3a81a1fb641)
 
-For the **EXTENDED** project:
+## Capital Budget
 
-- [Housing Cost](https://library.bu.edu/c.php?g=1151960&p=8408504)
-- [FRED Economic Data for Boston](https://fred.stlouisfed.org/tags/series?t=boston)
-- [Economic Variables](https://www.bostonplans.org/getattachment/c4bc18e1-d0a6-45dc-b26d-902078e6a491)
+The Capital Budget dataset for Boston’s FY25 outlines planned investments in the city's infrastructure and public assets. It includes detailed information about each project, such as the managing department, project name, scope, target neighborhood, and allocated budget. This budget focuses on long-term improvements for city facilities, roads, parks, and other community spaces, highlighting Boston’s commitment to maintaining and developing public infrastructure.
+There was no lost data, so we did not have to do any preprocessing for this dataset.
 
-## How you plan on modeling the data?
+### Geographic Spending
 
-- **Linear Regression:** To determine the relationship between two continuous variables, such as how population growth in specific districts impacts the city’s spending on public services. This can reveal how budget allocations for areas like education or infrastructure scale with population size, helping to identify whether certain regions receive proportionate funding based on their growth.
-- **Clustering:** To group city departments, budget categories, or geographic areas with similar spending patterns. This could highlight districts that consistently receive similar funding levels for infrastructure or public safety, helping to identify patterns of equitable or unequal distribution across neighborhoods. Clustering by geography could also reveal regions that have similar population sizes but differing budget allocations.
-- **Decision Trees:** To analyze which factors most strongly influence geographic budget allocations. For example, decision trees can identify whether factors like population density, economic status, or crime rates have the greatest impact on how much funding different areas receive for services like public safety or housing. This can help uncover disparities in budget allocations across neighborhoods.
-- **Time-Series Analysis:** To forecast future budget allocations by district based on historical spending data and economic trends. This can project how the budget for specific neighborhoods or districts might evolve, helping to predict which areas will see increased funding for projects like transportation or education based on past trends.
-- **Neural Networks:** To model complex relationships between multiple factors influencing geographic budget allocations. Neural networks can predict how funding will be distributed across neighborhoods by analyzing variables like population growth, economic disparities, housing costs, and infrastructure needs, capturing the non-linear relationships that drive budget decisions in different regions of the city.
+We examined the capital budget by geography (neighborhood) to understand if funding aligns with population needs and to uncover potential geographic disparities in spending. By looking at total spending and per capita spending, we aimed to see which neighborhoods receive the most funding in absolute terms and relative to their populations. This geographic breakdown helps identify areas where Boston may prioritize development, maintenance, or economic revitalization and sheds light on possible funding imbalances across neighborhoods.
 
-## How do you plan on visualizing the data?
+**Total Project Budget by Neighborhood**
 
-Our group plans on using a [website](https://www.data-to-viz.com/) to help us decide what visualizations we can make.
+Citywide received the most funding overall, which makes sense as this allocation likely funds projects that benefit the entire city.
+Among specific neighborhoods, Charlestown and Downtown/Government Center received some of the highest funding allocations, with Roxbury also receiving substantial funds. These areas may have high project needs, such as infrastructure improvements or community development projects.
 
-- **Histograms:** To compare different budget categories or departments.
-- **Box plots:** To display the distribution of budget allocations.
-- **Scatter plots:** To explore relationships between variables (e.g., housing cost vs. affordable housing budget).
-- **Line plots:** For visualizing time-series data (e.g., trends in spending over several years).
+**Distribution of Project Status**
 
-## What is your test plan? 
+This pie chart shows the distribution of project statuses for Boston’s FY25 capital projects, providing insight into the stages of various city initiatives.
+The high proportion of projects "In Design" and "To Be Scheduled" suggests a focus on forward planning and preparation.
+Meanwhile, the "Annual Program" and "In Construction" categories show that the city is also prioritizing active and recurring projects, ensuring that both new and essential services are being maintained.
 
-- Preprocess data (removing nulls, removing duplicates, imputing missing information, and more).
-- Perform exploratory data analysis using Python libraries like Matplotlib, Seaborn, Pandas, and Scipy.
-- Fit machine learning models to data (please refer to the previous section for more specifics):
-  - Split data into training, validation, and testing datasets.
-  - Perform hyperparameter tuning (if needed) using validation set. 
-  - For regression models, use techniques like cross-validation and calculate performance metrics (R-squared, Mean Squared Error).
-  - For clustering, evaluate the quality of clusters (e.g., using the silhouette score).
+**Per Capita Spending by Geography**
+
+
+The Capital dataset didn't include population, so we gathered population data from the 2020 Census, aligned neighborhood names, merged it with Boston’s capital budget data, and calculated per capita spending. This process enabled a meaningful comparison of budget allocations relative to population, helping to reveal potential geographic disparities in funding.
+
+**High Budget Per Capita**
+
+Chinatown, Charlestown, Downtown/Government Center, and North End have high budgets per capita.
+These are central or historically significant areas. Funding here likely supports infrastructure, tourism, economic development, and historical preservation.
+This trend suggests a prioritization of central areas or areas with significant historical importance, potentially to maintain attractiveness for tourism and economic activities.
+
+**Low Budget Per Capita**
+
+Neighborhoods like Allston/Brighton, Fenway-Kenmore, and Hyde Park receive lower budgets per capita despite having substantial populations.
+These areas might not receive the same level of targeted investment because they are further from the city center or primarily residential. This could indicate less emphasis on neighborhood-specific projects here, possibly due to fewer economic or historical landmarks.
+
+### Department Spending
+
+For department spending, we looked at the Boston City government planned capital budget for FY25 - FY29. 
+
+The clear leader in financing is going to be the Boston Public School Department taking up more than 25%. The following data makes sense as a large number of schools in the area require constant government funding to support their facilities and maintenance. On top of that staffing and salaries along with various student needs require significant financial resources. 
+A lot of the spending is going to be directed towards the Public Works Department. The city is planning to renew its infrastructure and the allocated costs show this very well. Worth noting,  the mentioned department also covers a lot of environment-directed initiatives such as recycling and waste management, which became a trend in big cities over the recent time.
+Further, a lot is also invested in renovating the city as a whole as Property Management and Park and Recreation are the next 2 biggest spending categories. A lot of space planning and maintenance repairs are going to be done by the city within the next 5 years.
+
+## Checkbook Data
+
+### General Information
+
+For these visualizations, we decided to use the checkbook spending data. According to the website, the checkbook data, “provides up-to-date financial information about the City’s expenditures [and] … is updated monthly, with certain personal information omitted in order to ensure privacy” (https://data.boston.gov/dataset/checkbook-explorer). It is important to note that this data does not contain any payroll information. There were individual data files for each fiscal year from 2011 to 2024, so we needed to concatenate all the datasets. Here was our processing steps:
+
+
+### Preprocessing and Cleaning Data
+
+**Data Standardization** (standardize_column_names function):
+This function handles the messy reality of government data where column names might be inconsistent across fiscal years. It creates a standardized format by converting everything to lowercase and replacing spaces with underscores. There's a specific mapping dictionary that handles common variations in column names (like 'vendor name' → 'vendor_name').
+**Data Type Processing** (process_data_types function):
+Given we're dealing with financial data, it's crucial to ensure consistent data types. We convert dates in the 'entered' column to proper datetime format. Handle department names by converting them to strings and filling any missing values with 'Unknown'. Then, we properly format monetary amounts by removing currency symbols ($) and commas, converting them to float values.
+**Save Function** (save_dataframe function):
+Ensures dates are saved in a consistent MM/DD/YYYY format. Uses UTF-8 encoding with BOM (byte order mark) to handle special characters.
+**Main Processing Function** (process_checkbook_files):
+This is where the heavy lifting happens for combining fiscal years 2011 - 2024. Uses a glob pattern to find all checkbook CSV files in the specified directory. Read each file with specific data type specifications to prevent issues. Applies the standardization and data type processing to each file. Concatenates all the fiscal year data into one comprehensive dataset. Saves the final cleaned dataset.
+### Preliminary Analysis
+Our group had to map departments to their assigned cabinets, this was done by looking at the Boston city government structure (https://www.boston.gov/departments/311/city-boston-government) on their official website and the operating budget dataset. Then, we aggregated total expenditures made by each cabinet per month and graphed the trend lines below.
+
+As expected, the education cabinet which only contains the Boston Public School department, has made plenty of expenditures month-over-month. It is expected to see fluctuations in spending (as we shouldn’t see a cabinet consistently spending high amounts of money every single month). However, it is interesting to note that spending seems to have increased significantly past the year 2022. This could reflect the introduction of new programs meant for students or new facilities being built.
+
+
+
+Here is an interesting case with the Equity & Inclusion Cabinet. We actually see little to no spending prior to the year 2020, however, around the year 2021 we notice a significant increase in spending by this cabinet. This timing aligns with broader societal shifts and Boston's enhanced focus on equity initiatives surrounding racial justice movements and communities of color. The increased spending reflects the City's commitment to addressing systemic inequities through dedicated resources and programs. It's worth noting that prior to 2020, equity and inclusion initiatives may have been distributed across other departments or cabinets, making it harder to track total spending in these areas.
