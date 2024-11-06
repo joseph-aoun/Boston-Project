@@ -40,7 +40,7 @@ Among specific neighborhoods, Charlestown and Downtown/Government Center receive
 
 **Distribution of Project Status**
 
-![plot](./images/george-figure-2.png)
+![download](https://github.com/user-attachments/assets/186318fa-f364-432c-82fb-174ca939c9ff)
 
 This pie chart shows the distribution of project statuses for Boston’s FY25 capital projects, providing insight into the stages of various city initiatives.
 The high proportion of projects "In Design" and "To Be Scheduled" suggests a focus on forward planning and preparation.
@@ -52,13 +52,13 @@ Meanwhile, the "Annual Program" and "In Construction" categories show that the c
 
 The Capital dataset didn't include population, so we gathered population data from the 2020 Census, aligned neighborhood names, merged it with Boston’s capital budget data, and calculated per capita spending. This process enabled a meaningful comparison of budget allocations relative to population, helping to reveal potential geographic disparities in funding.
 
-**High Budget Per Capita**
+**High Budget Per Capita**:
 
 Chinatown, Charlestown, Downtown/Government Center, and North End have high budgets per capita.
 These are central or historically significant areas. Funding here likely supports infrastructure, tourism, economic development, and historical preservation.
 This trend suggests a prioritization of central areas or areas with significant historical importance, potentially to maintain attractiveness for tourism and economic activities.
 
-**Low Budget Per Capita**
+**Low Budget Per Capita**:
 
 Neighborhoods like Allston/Brighton, Fenway-Kenmore, and Hyde Park receive lower budgets per capita despite having substantial populations.
 These areas might not receive the same level of targeted investment because they are further from the city center or primarily residential. This could indicate less emphasis on neighborhood-specific projects here, possibly due to fewer economic or historical landmarks.
