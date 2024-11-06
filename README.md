@@ -4,7 +4,6 @@
 
 The operating budget is the expenses generated to run the government on a day-to-day basis. This dataset contains columns such as Department, Programs, FY22 spending, FY23 Spending, FY24 spending, and the budget for FY25. ‘FY’ in this case refers to Fiscal Year, which means a one year period that the government or other organization used for financial reporting. When looking at this dataset, there was a lot of missing data (seen as ‘#Missing’ in the operating budget, which was replaced by 0). Some programs have missing data for the fiscal year of FY22 - FY24. We removed them for this visualization.
 
-
 ### Program Spending
 
 The "Top 10 Programs by Largest Spending (FY22 - FY24)" bar chart displays the most significant financial allocations across various programs within a specified period, emphasizing the key areas where funds are primarily directed. The program with the highest spending is "Pensions," with expenditures exceeding $1 billion, signifying a substantial investment in retiree benefits. Following closely are "BPS Finance" and "BPS Operations," highlighting significant funding for Boston Public Schools' administrative and operational costs. Other high-expenditure areas include "Charter School Tuition," "Boston Fire Suppression," and "Health Insurance," illustrating priorities in education, public safety, and employee benefits. "Bureau of Field Services" and "Debt Service" also command notable portions of the budget, reflecting essential services and fiscal responsibilities. Programs for "K-8" and "Elementary" education round out the top ten, indicating strong support for foundational educational services. This distribution of funds underscores a balanced approach to addressing pensions, education, public safety, and essential services in the city's budget strategy.
@@ -80,8 +79,7 @@ Further, a lot is also invested in renovating the city as a whole as Property Ma
 
 ### General Information
 
-For these visualizations, we decided to use the checkbook spending data. According to the website, the checkbook data, “provides up-to-date financial information about the City’s expenditures [and] … is updated monthly, with certain personal information omitted in order to ensure privacy” (https://data.boston.gov/dataset/checkbook-explorer). It is important to note that this data does not contain any payroll information. There were individual data files for each fiscal year from 2011 to 2024, so we needed to concatenate all the datasets. Here was our processing steps:
-
+For these visualizations, we decided to use the checkbook spending data. According to the website, the checkbook data, “provides up-to-date financial information about the City’s expenditures [and] … is updated monthly, with certain personal information omitted in order to ensure privacy” (https://data.boston.gov/dataset/checkbook-explorer). It is important to note that this data does not contain any payroll information. There were individual data files for each fiscal year from 2011 to 2024, so we needed to concatenate all the datasets. Here were our processing steps:
 
 ### Preprocessing and Cleaning Data
 
@@ -93,13 +91,23 @@ Given we're dealing with financial data, it's crucial to ensure consistent data 
 Ensures dates are saved in a consistent MM/DD/YYYY format. Uses UTF-8 encoding with BOM (byte order mark) to handle special characters.
 **Main Processing Function** (process_checkbook_files):
 This is where the heavy lifting happens for combining fiscal years 2011 - 2024. Uses a glob pattern to find all checkbook CSV files in the specified directory. Read each file with specific data type specifications to prevent issues. Applies the standardization and data type processing to each file. Concatenates all the fiscal year data into one comprehensive dataset. Saves the final cleaned dataset.
+
 ### Preliminary Analysis
+
 Our group had to map departments to their assigned cabinets, this was done by looking at the Boston city government structure (https://www.boston.gov/departments/311/city-boston-government) on their official website and the operating budget dataset. Then, we aggregated total expenditures made by each cabinet per month and graphed the trend lines below.
 
 ![plot](./images/matthew-figure-1.png)
 
-As expected, the education cabinet which only contains the Boston Public School department, has made plenty of expenditures month-over-month. It is expected to see fluctuations in spending (as we shouldn’t see a cabinet consistently spending high amounts of money every single month). However, it is interesting to note that spending seems to have increased significantly past the year 2022. This could reflect the introduction of new programs meant for students or new facilities being built.
+As expected, the education cabinet (which only contains the Boston Public School department), has made plenty of expenditures month-over-month. It is expected to see fluctuations in spending (as we shouldn’t see a cabinet consistently spending high amounts of money every single month). However, it is interesting to note that spending seems to have increased significantly past the year 2022. This could reflect the introduction of new programs meant for students or new facilities being built.
 
 ![plot](./images/matthew-figure-2.png)
 
 Here is an interesting case with the Equity & Inclusion Cabinet. We actually see little to no spending prior to the year 2020, however, around the year 2021 we notice a significant increase in spending by this cabinet. This timing aligns with broader societal shifts and Boston's enhanced focus on equity initiatives surrounding racial justice movements and communities of color. The increased spending reflects the City's commitment to addressing systemic inequities through dedicated resources and programs. It's worth noting that prior to 2020, equity and inclusion initiatives may have been distributed across other departments or cabinets, making it harder to track total spending in these areas.
+
+![plot](./images/matthew-figure-3.png)
+
+As we were investigating cabinets, we reached an unusual graph. The People Operations Cabinet consists of these departments: Labor Relations, Human Resources, Workers Compensation Fund, Health Insurance, Registry Division, and Office of People Operations. The majority of spending prior the year 2022 is due to health insurance, so it is pretty odd that spending suddenly dropped for the People Operations Cabinet. We decided to investigate further as to why health insurance spending decreased for 2023, and we managed to find an official news article released by mass.gov (https://www.mass.gov/news/health-insurance-plan-default-enrollment-placements-for-benefits-effective-july-1-2023) that talked about a merger betwen different health plans. However, this does not seem relevant to health insurance spending by the People Operations Cabinet and the noticeable drop in spending. If we actually look at official documentation for the operating budget for health insurance, notice how spending is actually increasing rather than decreasing from fiscal year 2020 to fiscal year 2023 (the file can be found publicly available by searching for "boston people operations cabinet health insurance", but I have provided a screenshot below). 
+
+![plot](./images/matthew-figure-4.png)
+
+Our group concluded that the checkbook data is not a reliable dataset to look at due to mismatches in spending (in this case, the health insurance department under the People Operations Cabinet). There are a lot of potential reasons for the differences in official documentation and what the data shows. It is possible that health insurance for employees no longer needs to appear as a transaction in the checkbook data. However, we can not make this confirmation unless we speak to the City and ask how they have been collecting individual expenditures made by each individual department.
