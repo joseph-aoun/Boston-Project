@@ -92,7 +92,7 @@ Ensures dates are saved in a consistent MM/DD/YYYY format. Uses UTF-8 encoding w
 **Main Processing Function** (process_checkbook_files):
 This is where the heavy lifting happens for combining fiscal years 2011 - 2024. Uses a glob pattern to find all checkbook CSV files in the specified directory. Read each file with specific data type specifications to prevent issues. Applies the standardization and data type processing to each file. Concatenates all the fiscal year data into one comprehensive dataset. Saves the final cleaned dataset.
 
-### Preliminary Analysis
+### Exploratory Analysis
 
 Our group had to map departments to their assigned cabinets, this was done by looking at the Boston city government structure (https://www.boston.gov/departments/311/city-boston-government) on their official website and the operating budget dataset. Then, we aggregated total expenditures made by each cabinet per month and graphed the trend lines below.
 
@@ -111,3 +111,49 @@ As we were investigating cabinets, we reached an unusual graph. The People Opera
 ![plot](./images/matthew-figure-4.png)
 
 Our group concluded that the checkbook data is not a reliable dataset to look at due to mismatches in spending (in this case, the health insurance department under the People Operations Cabinet). There are a lot of potential reasons for the differences in official documentation and what the data shows. It is possible that health insurance for employees no longer needs to appear as a transaction in the checkbook data. However, we can not make this confirmation unless we speak to the City and ask how they have been collecting individual expenditures made by each individual department.
+
+## Boston Utility Data
+
+### General Information
+
+According to this [link](https://data.boston.gov/dataset/city-of-boston-utility-data), the City of Boston collects monthly utility data for all its accounts, which comes from its Enterprise Energy Management System. One file for utility bills was provided (note that the dataset is constantly being updated).
+
+### Preprocessing and Cleaning Data
+
+When it comes to cleaning the data, first we needed to handle all the different typos in department naming. Our group decided to manually create a dictionary mapping and change the abbreviation of a department to its full name for better readability. Any values in the 'DepartmentName' column that is NA is simply replaced with the string 'UNKNOWN'. When it comes to plotting energy spending over time, we had to group the data at a monthly frequency based on the 'InvoiceDate'. We then pivot the table so that the 'InvoiceDate' is the index, the columns are 'DepartmentName', and the values within eahc cell is 'TotalCost'. 
+
+### Exploratory Analysis
+
+Our group was interested in these specific departments: 'Boston Public Schools' and 'Boston Transportation'. 
+
+**Boston Public Schools**:
+
+Let's investigate Boston Public Schools. In the figure below, we also included a light grey region to represent winter months. Looking at the graph, the overall spending is a lot more compared to the rest of the departments. This is to be expected (you can look at how much money is being allocated to the Boston Public Schools system in the analysis at the beginning of this README document). The amount of spending in energy is relatively consistent from 2011 to 2019 in a seasonal pattern. Spending increases during the winter months, most likely due to heating large buildings thorughout the day. It is also important to note that there are most likely older, less efficient systems in many schools which can lead to greater costs. Schools have a wide range of things that can consume a lot of energy. For instance, indoor and outdoor lighting (classrooms, hallways, common areas, athletic fields), computing (computer labs, smartboards, projectors, servers), and kitchen equipment (industrial refrigeerators and freezers, stoves and ovens, food preparation equipment). Another interesting region to look at is during COVID. Notice how spending seems to decrease and doesn't really increase until past 2021. What is unusual is that spending suddenly spikes past 2021 and maintains much higher peaks and drops compared to previous years. There can be many reasons, one of them could be due to new buildings being added or it could be some data collection error (look at 2024, where we see the highest peak). 
+
+![plot](./images/matthew-figure-5.png)
+
+In regards to energy type breakdown, nearly half of Boston Public Schools' energy comes from electric. Our group is pretty surprised about how around 19% of energy comes from water. This is great to see, as we want high energy usage departments to start transitioning to reliable, sustainable and affordable clean energy. Regarding natural glass, it does have some great qualities. According to the [United States Energy Information Administration (EIA)](https://www.eia.gov/energyexplained/natural-gas/natural-gas-and-the-environment.php), it states, "Burning natural gas for energy results in fewer emissions of nearly all types of air pollutants and carbon dioxide (CO2) emissions than burning coal or petroleum products to produce an equal amount of energy." In other words, it is a pretty efficient energy source that is able to cleanly burn compared to things like coal and oil. However, it is still a producer of greenhouse ggas as it is composed of mainly methane. Our group wonders if other sources of renewable energy such as wind or geothermal (like Boston University's Center of Computing and Data Sciences) would ever be used, especially for such a energy intensive department.
+
+![plot](./images/matthew-figure-7.png)
+
+**Boston Transportation Department**:
+
+Let's investigate the Boston Transportation Department. This department has much less spending compared to Boston Public Schools. There is increased spending during the winter months, which is to be expected. However, we once again notice a sudden spike in spending and continued volatility in spending past the year 2021. Given that this is also happening in Boston Public Schools, we are suspecting that there might be something happening in the way the data is collected (the system could be missing essential invoice data for certain departments) because spending should not suddenly double. It is safe to ignore later months for the year of 2024 because the data hasn’t been aggregated yet. 
+
+![plot](./images/matthew-figure-6.png)
+
+In regards to energy type breakdown, this was expected. The following information has been retrieved from this website [here](https://www.mbta.com/sustainability/greening-the-fleet-decarbonizing-the-mbta). The Massachusetts Bay Transportation Authority (MBTA) operates the fully electric subway and light rail lines, which includes: the red, blue, orange, green lines (for the green line, there was a complete overhaul so that new trains would have efficient HVAC systems and regenerative breaking). However, for buses, a majority of the fleet still relies on diesel, which "consumes more fuel and generates more greenhouse gas" (1). Fortunately, hybrid buses and battery buses were introduced in 2010 and 2019 respectively and their is an ongoing, active transition to these versions. This department is the least of our concerns in regards to energy spending, but there might be an argument for increasing budget for this department. 
+
+![plot](./images/matthew-figure-8.png)
+
+**Spending Across Each Year (All Departments Considered)**
+
+When we look at the amount of invoices across the year and look at the energy type percentage make up for each year, there are a few important things to consider. Electricity has remained pretty consistent since 2011, making up around 70% to 80% of invoices for each year. This is the same for natural gas usage, which makes up around 8% to 10% for each year. Besides this, our group noticed the increased percentage of water invoices. This could reflect the City of Boston's commitment in pursuing hydropower, a renewable energy source that is abundant. However, since the year of 2024 is not finished, the proportions may be inaccurate as we have not collected and aggregated all invoices for the year. Oil energy invoices only appears in the years 2017 to 2019, possibly due to some project that requires it, and steam energy invoices do not appear at all. 
+
+![plot](./images/matthew-figure-9.png)
+
+## Boston Employee Earnings Data
+
+### General Information
+
+According to this [link](https://data.boston.gov/dataset/employee-earnings-report), the City of Boston publishes its payroll data for its employees, providing features like the name of the employee, the job they are working, and the amount they make from their base salary and overtime.
