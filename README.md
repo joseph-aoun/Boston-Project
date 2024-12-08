@@ -123,6 +123,50 @@ For department spending, we looked at the Boston City government planned capital
 
 ![plot](./images/daniel-figure-2.png)
 
+---
+
+### Public School Spending
+
+Boston has a big public school network consisting of 137 schools spread across the city to serve its large population. More than $1.2B are allocated altogether towards the need of public schools.
+
+![plot](./images/daniel-figure-3.png)
+
+Let’s take a look at how exactly the money is going to be distributed among schools across different parts of the city.
+
+- A lot of the government initiatives are directed towards citywide needs of the public school system. Despite that, there is also a visible contrast between how much money in total each neighborhood is receiving.
+- Chinatown is the neighborhood to receive the most allocated funds out of all the neighborhoods. The reason for this is the construction of a completely new facility for Josiah Quincy Upper School, which alone is already over $200M.
+- A lot of the spending is directed towards other central districts of the city such as Roxbury and South End.
+- Dorchester, despite being home to 25 public schools, is among the bottom 50% of neighborhoods in terms of budget allocations.
+- Neighborhoods such as Jamaica Plain, Mission Hill, and South Boston receive very little to no funding from the city department.
+
+![plot](./images/daniel-figure-4.png)
+
+Comparing neighborhoods simply by their total spending would not be efficient as they are different in size, number of public schools located in them which are also of different size as well. We can take the population of school aged children living in each neighborhood (information taken from Boston Public Schools website here) and use it to calculate spending per student in each district respectively.
+
+**Note**: Further analysis only focuses on districts with available data on both budget allocations and school aged population. This constitutes the majority of the neighborhoods. For the most part, only smaller central business districts with no schools are the ones being excluded. Only direct budget allocations (not counting citywide plans) are counted to better compare individual needs of each district.
+
+- Given the large reconstruction project and small size of the neighborhood, the spending per student living in Chinatown reaches an enormous sum of $400,000 dollars. The second neighborhood by the criteria, South End, only allocated $30,000 per student.
+- Roslindale, Charlestown, Roxbury and Mattapan got around $10,000 - $20,000 per student.
+- All of the other districts have less than $5,000 per capita with neighborhoods like Hyde Park and Fenway not having any direct allocations.
+
+Safe to say, there is quite a large disparity between those numbers. There is a need to add that, obviously, schools may have students that live in other districts. Regardless of that, proximity factor is still quite vital and we can use our spending per capita metric to illustrate whether the city proportionally allocates funds when compared to the density of students in differently sized areas. 
+
+![plot](./images/daniel-figure-5.png)
+
+A more interesting question could be how public school budget allocations correlate with how developed the respective neighborhoods are. Do more wealthy parts of the city get better funding on average? Does the Boston government try to consider socio-economic factors into account when allocating the budget?
+
+We can use the data from the most recent American Community Survey on average income in Boston neighborhoods found here. Given this, let’s try to see if there is a relationship between average income and spending per student across different neighborhoods of Boston. When plotted, we achieve, the following figure:
+
+![plot](./images/daniel-figure-6.png)
+
+The slope of our regression line is 0.86 which corresponds to the p-value of 0.335. With these numbers,it is clear we do not have sufficient evidence to confirm that there is correlation between how affluent the neighborhood is and how much funding do its public schools get.
+
+Fair to say, it is a good thing that the Boston city government tries to equally allocate the budget among its different parts. This seems especially important from the perspective of less fortunate families in Roxbury and Mattapan who also cannot afford private schools for their children. 
+
+However, we also cannot say for sure if there is a complete lack of correlation between the two numbers as we still received a positive slope and p-value that is not extremely high. Obviously, there are only so many districts in Boston which limits our pool of data.
+
+It can also be argued that perhaps less fortunate parts of the city might, on the contrary, need respectively higher budgets due to historic reasons as children from more poor neighborhoods often do not have access to as many opportunities as their peers from better parts of the city. In this case, careful budget control could really help with solving socio-economic disparities in the city. Another question worth asking appears when we look at Chinatown, which is getting a brand new modern school built in it using city’ money. Would a project like this be done in the near future in Roxbury or Mattapan, for example? Would any significant projects at all be directed towards less affluent parts of the city.
+
 ## Checkbook Data
 
 ### General Information
