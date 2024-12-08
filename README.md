@@ -22,46 +22,94 @@ The chart displays the top 10 programs in Boston with the highest budget growth 
 ![plot](./images/vi-figure-3.jpeg)
 
 
-## Capital Budget
+## Capital Budget Analysis
 
-The Capital Budget dataset for Boston’s FY25 outlines planned investments in the city's infrastructure and public assets. It includes detailed information about each project, such as the managing department, project name, scope, target neighborhood, and allocated budget. This budget focuses on long-term improvements for city facilities, roads, parks, and other community spaces, highlighting Boston’s commitment to maintaining and developing public infrastructure.
-There was no lost data, so we did not have to do any preprocessing for this dataset.
+### Overview
+The **Capital Budget dataset** for Boston’s FY25 outlines planned investments in the city's infrastructure and public assets. It includes detailed information about each project, such as the managing department, project name, scope, target neighborhood, and allocated budget. This budget focuses on long-term improvements for city facilities, roads, parks, and other community spaces, reflecting Boston’s commitment to maintaining and developing public infrastructure.
+
+Notably, there was no missing data, so no preprocessing was required for this dataset.
+
+---
 
 ### Geographic Spending
 
 We examined the capital budget by geography (neighborhood) to understand if funding aligns with population needs and to uncover potential geographic disparities in spending. By looking at total spending and per capita spending, we aimed to see which neighborhoods receive the most funding in absolute terms and relative to their populations. This geographic breakdown helps identify areas where Boston may prioritize development, maintenance, or economic revitalization and sheds light on possible funding imbalances across neighborhoods.
 
-**Total Project Budget by Neighborhood**
+#### **Total Project Budget by Neighborhood**
 
 ![plot](./images/george-figure-1.png)
 
-Citywide received the most funding overall, which makes sense as this allocation likely funds projects that benefit the entire city.
-Among specific neighborhoods, Charlestown and Downtown/Government Center received some of the highest funding allocations, with Roxbury also receiving substantial funds. These areas may have high project needs, such as infrastructure improvements or community development projects.
+- **Citywide** received the highest funding overall, likely supporting projects that benefit the entire city. 
+- Among specific neighborhoods, **Charlestown**, **Downtown/Government Center**, and **Roxbury** received significant funding allocations. 
+  - These areas may have higher project needs, such as infrastructure improvements or community development initiatives.
+
 
 **Distribution of Project Status**
 
 ![download](https://github.com/user-attachments/assets/186318fa-f364-432c-82fb-174ca939c9ff)
 
-This pie chart shows the distribution of project statuses for Boston’s FY25 capital projects, providing insight into the stages of various city initiatives.
-The high proportion of projects "In Design" and "To Be Scheduled" suggests a focus on forward planning and preparation.
-Meanwhile, the "Annual Program" and "In Construction" categories show that the city is also prioritizing active and recurring projects, ensuring that both new and essential services are being maintained.
+This pie chart shows the distribution of project statuses for Boston’s FY25 capital projects, offering insight into the stages of various city initiatives: 
+- The large proportion of projects **"In Design"** and **"To Be Scheduled"** suggests a focus on forward planning and preparation. 
+- The **"Annual Program"** and **"In Construction"** categories demonstrate that Boston also prioritizes active and recurring projects, ensuring both new and essential services are being maintained. 
 
-**Per Capita Spending by Geography**
+
+### Per Capita Spending by Geography
 
 ![plot](./images/george-figure-3.png)
 
-The Capital dataset didn't include population, so we gathered population data from the 2020 Census, aligned neighborhood names, merged it with Boston’s capital budget data, and calculated per capita spending. This process enabled a meaningful comparison of budget allocations relative to population, helping to reveal potential geographic disparities in funding.
+To meaningfully compare budget allocations relative to population, we: 
+1. Collected population data from the **2020 Census**. 
+2. Aligned neighborhood names between the census and the capital budget datasets.
+3. Merged the population data with the capital budget to calculate **per capita spending**
 
-**High Budget Per Capita**:
+This process uncovered potential geographic disparities in funding.
 
-Chinatown, Charlestown, Downtown/Government Center, and North End have high budgets per capita.
-These are central or historically significant areas. Funding here likely supports infrastructure, tourism, economic development, and historical preservation.
-This trend suggests a prioritization of central areas or areas with significant historical importance, potentially to maintain attractiveness for tourism and economic activities.
+#### **High Budget Per Capita**
 
-**Low Budget Per Capita**:
+- **Chinatown**, **Charlestown**, **Downtown/Government Center**, and **North End** have high budgets per capita. 
+  - These are central or historically significant areas. 
+  - Funding likely supports infrastructure, tourism, economic development, and historical preservation. 
+  - This trend indicates prioritization of central or historically significant neighborhoods, possibly to maintain attractiveness for tourism and economic activities. 
 
-Neighborhoods like Allston/Brighton, Fenway-Kenmore, and Hyde Park receive lower budgets per capita despite having substantial populations.
-These areas might not receive the same level of targeted investment because they are further from the city center or primarily residential. This could indicate less emphasis on neighborhood-specific projects here, possibly due to fewer economic or historical landmarks.
+#### **Low Budget Per Capita**
+
+- Neighborhoods like **Allston/Brighton**, **Fenway-Kenmore**, and **Hyde Park** receive lower budgets per capita despite substantial populations. 
+  - These areas might not receive the same level of investment due to their distance from the city center or primarily residential nature. 
+  - This could suggest a lower emphasis on neighborhood-specific projects in these areas, possibly due to fewer economic or historical landmarks.
+
+---
+
+### Immigration Percentage by Neighborhood
+
+![immigration%](https://github.com/user-attachments/assets/8ab71a08-ddff-45c3-bf5a-a07816c89542)
+
+- #### **Highest Immigration Percentages** 
+  - **East Boston** has the highest immigrant population percentage, standing out significantly from other neighborhoods. 
+  - **Chinatown** and **Fenway-Kenmore** also have notable immigrant representation.
+- #### **Moderate Immigration Percentages** 
+  - Neighborhoods like **Allston/Brighton**, **West End**, and **Mission Hill** exhibit moderate immigrant percentages. 
+- #### **Lowest Immigration Percentages** 
+  - **South Boston**, **North End**, and **Charlestown** have the lowest percentages, indicating fewer immigrant populations relative to their total populations.
+
+---
+### Immigration and Total Budget per Neighborhood
+![immigration:budget](https://github.com/user-attachments/assets/7a6a6a91-3223-40de-aadc-32aa1b18db1f)
+
+#### Observations
+1. **East Boston**:
+  - Despite having the highest immigration percentage, it does not have the highest total budget allocation.
+  - Suggests a potential disparity between immigrant populations and funding. 
+2. **Chinatown**:
+  - Receives significant budget allocation compared to its relatively high immigrant population. 
+3. **Dorchester**: 
+  - While it has moderate immigration percentages, it receives substantial funding, likely due to prioritization of infrastructure or development needs.
+
+#### Insights
+- **Spending Patterns**: Some neighborhoods with high immigrant populations (e.g., **East Boston**, **Fenway-Kenmore**) do not receive proportional funding. 
+- **Policy Implications**: Highlights an opportunity to assess funding distribution to ensure alignment with demographic needs, particularly in neighborhoods with large immigrant communities.
+- **Outliers**: Neighborhoods like **Chinatown** and **Dorchester** seem to receive higher budgets relative to their immigrant percentages, suggesting additional factors influence spending decisions.
+
+--- 
 
 ### Department Spending
 
