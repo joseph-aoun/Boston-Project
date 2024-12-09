@@ -298,3 +298,5 @@ We can notice that there is overall steady increase in family homelessness with 
 ![plot](./images/v_j-figure-3.png)
 
 **Analysis**
+
+The above graph shows the growth in the number of families by shelter type. It correlates with what we've seen above. In the sense that there is a teady increase in family homelessness with a dip around 2021, followed by a steady increase into 2024. With this in mind, it is only logical to question the reason for such a strange trend. In order to answer the above dilemma we proposed to analyze and utilize multiple statistical and probabilistic tools to analyze the correlations between our hypothesis and the actual observed trend.
