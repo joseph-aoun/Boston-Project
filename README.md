@@ -278,6 +278,23 @@ Notice the amount of outliers for both the police department and fire department
 ![plot](./images/matthew-figure-12.png)
 
 ## Boston Homelessness Analysis
-### Growth in single adults who are single
+
+### Growth in single adults who are staying at shelters
 
 ![plot](./images/v_j-figure-1.png)
+
+**Analysis**
+
+This plot illustrates the number of single adults in different types of shelters over time. The overall trend reflects a decrease in homelessness among single adults until 2021, followed by a notable increase, possibly due to socioeconomic or policy changes. One important trend to notice is the increase between 2021 - 2024. This will be helpful in our next analysis.
+
+### Growth in Persons in Families by Shelter Type
+
+![plot](./images/v_j-figure-2.png)
+
+**Analysis**
+
+We can notice that there is overall steady increase in family homelessness with a dip around 2021, followed by a steady increase into 2024 conforming in general to the above single adults homelessness trends. In addition, the red line closely follows the emergency shelter trend, suggesting the majority of homeless families rely on emergency shelters.
+
+![plot](./images/v_j-figure-3.png)
+
+**Analysis**
