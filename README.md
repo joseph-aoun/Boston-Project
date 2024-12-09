@@ -277,5 +277,7 @@ Notice the amount of outliers for both the police department and fire department
 
 ![plot](./images/matthew-figure-12.png)
 
-##Homelessness analysis in Boston
-###
+## Boston Homelessness Analysis
+### Growth in single adults who are single
+
+![plot](./images/v_j-figure-1.png)
