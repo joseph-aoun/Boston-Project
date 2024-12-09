@@ -276,3 +276,6 @@ If we actually look at a distribution or histogram, with the x-axis being total 
 Notice the amount of outliers for both the police department and fire department. In addition, their medians and the range of total gross pay for these departments is significantly greater than the rest of the departments. They both have a lot more employees than the rest of the departments (please look at the exploratory data analysis notebook to get summary statistics). An interesting case is that the Office of People Operations, Enrollment Services Department, and the Office of Labor Relations, only have 6, 10, and 11 employees respectively. These departments are still considered as the top 10 departments in terms of median total gross pay (we could possibly dealing with executives or high ranking board members, rather than the ordinary employee). Our group wonders if there is some opt-out option to not have salary data publicly available, especially since the data already provides sensitive information like the name of the employee and their role in a specific department. It would be ideal to have access to a larger corpus of employee data as it may uncover some interesting insight about employee paychecks.
 
 ![plot](./images/matthew-figure-12.png)
+
+##Homelessness analysis in Boston
+###
