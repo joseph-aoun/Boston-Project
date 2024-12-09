@@ -321,7 +321,7 @@ P-value: 0.326 (greater than 0.05)
 
 Since the p-value (0.326) is greater than 0.05, we fail to reject the null hypothesis. This means there is insufficient evidence to conclude that a significant linear relationship exists between the two variables. The weak negative correlation suggests a trend, but it is not statistically significant.
 
-![plot](./images/v_j-figure-6.png)
+![plot](./images/v_j-figure-7.png)
 
 **Analysis of Total Homelessness vs. Mayor's Office of Housing Operating Expenses**
 
