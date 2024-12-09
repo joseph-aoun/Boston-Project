@@ -1,0 +1,10 @@
+pandas
+glob
+re
+os
+seaborn
+numpy
+matplotlib
+chardet
+plotly
+scipy
