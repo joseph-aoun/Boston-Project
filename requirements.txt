@@ -1,10 +1,13 @@
 pandas
-glob
 re
-os
 seaborn
 numpy
 matplotlib
 chardet
 plotly
 scipy
+geopandas
+scikit-learn
+shapely
+statsmodels
+adjustText
