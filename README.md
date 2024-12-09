@@ -321,3 +321,33 @@ P-value: 0.326 (greater than 0.05)
 
 Since the p-value (0.326) is greater than 0.05, we fail to reject the null hypothesis. This means there is insufficient evidence to conclude that a significant linear relationship exists between the two variables. The weak negative correlation suggests a trend, but it is not statistically significant.
 
+![plot](./images/v_j-figure-6.png)
+
+**Analysis of Total Homelessness vs. Mayor's Office of Housing Operating Expenses**
+
+Statistical Results
+Correlation Coefficient: 0.9998 (a very strong positive correlation)
+P-value: 0.012 (statistically significant at a 5% significance level)
+Covariance: 4.70 × 10^9
+
+Null Hypothesis
+H₀: There is no linear relationship between total homelessness and the Mayor's Office of Housing operating expenses.
+H₁: There is a significant linear relationship between the two variables.
+
+**Conclusion**
+
+The p-value (0.012) is less than 0.05, leading to a rejection of the null hypothesis. This means the data provides strong evidence of a significant linear relationship between homelessness and housing operating expenses.
+
+**Interpretation**
+Trend Observation:
+
+Both total homelessness and operating expenses have steadily increased from 2022 to 2024.
+The extremely high correlation (0.9998) suggests that changes in homelessness are closely mirrored by changes in the operating expenses of the Mayor's Office of Housing.
+
+**Possible Implications:**
+
+The increasing expenses might reflect the city's response to rising homelessness, such as funding shelter programs or housing initiatives.
+However, the simultaneous increase in homelessness suggests that despite rising expenses, the interventions may not be sufficient to curb the overall trend.
+
+Nonetheless, correlation does not imply causation. The relationship might be influenced by other external factors like economic trends, housing markets, or policy shifts.
+
