@@ -300,3 +300,24 @@ We can notice that there is overall steady increase in family homelessness with 
 **Analysis**
 
 The above graph shows the growth in the number of families by shelter type. It correlates with what we've seen above. In the sense that there is a teady increase in family homelessness with a dip around 2021, followed by a steady increase into 2024. With this in mind, it is only logical to question the reason for such a strange trend. In order to answer the above dilemma we proposed to analyze and utilize multiple statistical and probabilistic tools to analyze the correlations between our hypothesis and the actual observed trend.
+
+![plot](./images/v_j-figure-4.png)
+
+For the sake of simplicity, we decided to aggregate the above values into one chart, which makes further analysis simpler.
+
+![plot](./images/v_j-figure-5.png)
+
+Going further, our first analysis is testing whether there is any correlation between domestic violence and homelessness rate.
+As such we define our Null hypothesis H0 as follows: There is no significant linear relationship between the two variables (domestic violence programs and homeless families).
+
+The p-value tests the null hypothesis. If the p-value is less than the chosen significance level (commonly 𝛼 = 0.05), the null hypothesis is rejected.
+
+### Results:
+
+Correlation Coefficient: -0.370 (a weak negative correlation)
+P-value: 0.326 (greater than 0.05)
+
+### Conclusion:
+
+Since the p-value (0.326) is greater than 0.05, we fail to reject the null hypothesis. This means there is insufficient evidence to conclude that a significant linear relationship exists between the two variables. The weak negative correlation suggests a trend, but it is not statistically significant.
+
