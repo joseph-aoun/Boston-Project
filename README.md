@@ -422,8 +422,18 @@ The graph illustrates the Fair Housing & Equity Budget from FY22 to FY25, showin
 
 ![plot](./images/v_j-figure-13.png)
 
+**Analysis of the Fair Housing & Equity Budget**
+
+The line graph shows the Fair Housing & Equity budget over four fiscal years (FY22-FY25). After starting around $280,000 in FY22, there is a steep increase to approximately $370,000 in FY23. This surge is followed by a notable reduction in FY24 funding to around $310,000, before a modest recovery to roughly $330,000 in FY25. Overall, the pattern indicates significant volatility, possibly reflecting changes in funding priorities or external factors influencing the allocation of resources.
+
 ![plot](./images/v_j-figure-14.png)
+
+**Analysis of Fair Housing Commission Spending by Category**
+
+This grouped bar chart compares spending across multiple categories—Contractual Services, Current Charges & Obligations, Equipment, Personnel Services, and Supplies & Materials—over four fiscal periods: FY22 Actuals, FY23 Actuals, FY24 Appropriation, and FY25 Budget. Contractual Services and Personnel Services dominate expenditures, showing substantial shifts year-to-year. For instance, Contractual Services drop notably between FY22 and FY23, then surge again by FY25, while Personnel Services remain significant and somewhat more stable. In contrast, other categories (Current Charges & Obligations, Equipment, and Supplies & Materials) remain relatively small, with only minor fluctuations. This distribution suggests that contractual agreements and staff-related costs are the primary drivers of the Commission’s spending changes over time.
 
 ![plot](./images/v_j-figure-15.png)
 
-![plot](./images/v_j-figure-16.png)
+**Analysis of Fair Housing Commission Total Spending Over Years**
+
+The line chart of total spending from FY22 to FY25 illustrates a U-shaped trend. Expenditures start just under $500,000 in FY22, then fall to around $400,000 in FY23, indicating a period of budget tightening or lower outlays. Following this dip, there is a steady and significant increase: spending reaches approximately $600,000 by FY24 and soars even higher to roughly $780,000 by FY25. This trajectory suggests that after a period of reduced spending, the Commission experienced marked growth in investment or financial capacity, potentially due to strategic prioritization, increased allocations, or program expansions.
