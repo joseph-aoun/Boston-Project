@@ -421,3 +421,9 @@ This could reflect the impact of economic stability, housing policies, or invest
 The graph illustrates the Fair Housing & Equity Budget from FY22 to FY25, showing a sharp increase from approximately $280,000 in FY22 to $370,000 in FY23. This is followed by a significant decrease to around $310,000 in the FY24 appropriation, and then a moderate rise to $330,000 in the FY25 budget. These fluctuations reflect shifts in funding priorities over the years.
 
 ![plot](./images/v_j-figure-13.png)
+
+![plot](./images/v_j-figure-14.png)
+
+![plot](./images/v_j-figure-15.png)
+
+![plot](./images/v_j-figure-16.png)
