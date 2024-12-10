@@ -279,7 +279,7 @@ Notice the amount of outliers for both the police department and fire department
 
 ![plot](./images/matthew-figure-12.png)
 
-## Boston Homelessness Analysis
+## Boston Homelessness Analysis Using Boston's Mayor of Housing Budget
 
 ### Growth in single adults who are staying at shelters
 
@@ -301,7 +301,7 @@ We can notice that there is overall steady increase in family homelessness with 
 
 **Analysis**
 
-The above graph shows the growth in the number of families by shelter type. It correlates with what we've seen above. In the sense that there is a teady increase in family homelessness with a dip around 2021, followed by a steady increase into 2024. With this in mind, it is only logical to question the reason for such a strange trend. In order to answer the above dilemma we proposed to analyze and utilize multiple statistical and probabilistic tools to analyze the correlations between our hypothesis and the actual observed trend.
+The above graph shows the growth in the number of families by shelter type. It correlates with what we've seen above in the sense that there is a steady increase in family homelessness with a dip around 2021, followed by a steady increase into 2024. With this in mind, it is only logical to question the reason for such a strange trend. In order to answer the above dilemma we proposed to analyze and utilize multiple statistical and probabilistic tools to analyze the correlations between our hypothesis and the actual observed trend. These findings support the claim that Boston have the highest number of sheltered homeless people in the United States as most of them are in shelters, and few are on the street.
 
 ![plot](./images/v_j-figure-4.png)
 
@@ -322,6 +322,17 @@ P-value: 0.326 (greater than 0.05)
 ### Conclusion:
 
 Since the p-value (0.326) is greater than 0.05, we fail to reject the null hypothesis. This means there is insufficient evidence to conclude that a significant linear relationship exists between the two variables. The weak negative correlation suggests a trend, but it is not statistically significant.
+
+![plot](./images/v_j-figure-6.png)
+
+**Boston's Year-to-Year Total of Homeless People**
+
+By Combining the total number of single adults and a number of individuals in families, we can capture the number of homeless people in Boston, and the changes they endure year to year.
+The graph shows the trends in total homelessness from 2016 to 2024, with a noticeable decline from 2016 to 2022, reaching its lowest point in 2022. However, a sharp increase is observed from 2022 to 2024, reversing the earlier downward trend and returning to near 2018 levels.
+
+**Possible implications**
+
+The sharp increase from 2022 to 2024 may be due to the economic downturn due to the COVID-19 pandemic, especially because the graph shows a decline from 2016-2022. It's possible that people take loans to sustain themselves during the year 2020-2021 during the pandemic, and also because of the government handouts. However, after with high inflation and a bad job market after the pandemic, the number of homeless people increases significantly.
 
 ![plot](./images/v_j-figure-8.png)
 
@@ -353,3 +364,58 @@ However, the simultaneous increase in homelessness suggests that despite rising 
 
 Nonetheless, correlation does not imply causation. The relationship might be influenced by other external factors like economic trends, housing markets, or policy shifts.
 
+![plot](./images/v_j-figure-9.png)
+
+**Analysis of Year-to-Year Growth of Total Homelessness vs Mayor's Office of Housing Operating Expenses**
+
+The graph compares total homelessness with the Mayor's Office of Housing operating expenses from 2022 to 2024. While both metrics show a steady upward trend, homelessness increased by 17.2% during this period, outpacing the 13% rise in housing-related expenses. This suggests that despite increased spending, homelessness continues to grow, indicating potential inefficiencies or limitations in addressing the underlying causes.
+
+![plot](./images/v_j-figure-10.png)
+
+**Analysis of House Price Index for All Transactions for The City of Boston vs Total Homelessness**
+
+Statistical Analysis:
+Correlation coefficient: -0.6550539119685094 (A moderate-to-strong negative relationship)
+P-value: 0.05550066761257748 (Not statistically significant at the 5% level)
+
+Null Hypothesis:
+
+H₀: There is no linear relationship between total homelessness and the housing price index.
+H₁: There is a significant linear relationship between the two variables.
+
+**Conclusion**
+
+The p-value (0.012) is less than 0.05, leading to a rejection of the null hypothesis. This means the data provides strong evidence of a significant linear relationship between homelessness and housing operating expenses.
+
+**Interpretation**
+
+Based on the Correlation Coefficient as the housing price index increases, total homelessness tends to decrease, and vice versa. The strength of the relationship (-0.6551) suggests a meaningful inverse association, though it is not perfect. However, it is important to note that correlation does not imply causation—other factors, such as economic policies, social programs, or regional conditions, may also influence the observed trends.
+
+**Possible Implications:**
+
+The negative correlation aligns with the potential hypothesis that rising housing prices could reflect broader economic stability or increased investment in housing resources, which may reduce homelessness. However, there may be some other external factors that may cause this trend.
+
+![plot](./images/v_j-figure-11.png)
+
+**Analysis of the Growth of House Prices vs Growth of Total Homelessness**
+
+Statistical Analysis:
+Covariance = -44.06707548243705
+
+**Interpretation**
+
+The covariance value of −44.07 indicates a negative relationship between the growth percentages of the Housing Price Index (HPI) and Total Homelessness from 2016 to 2024. Specifically, when the growth percentage of the Housing Price Index increases, the growth percentage of Total Homelessness tends to decrease, and vice versa.
+
+**Possible Implications:**
+
+This could reflect the impact of economic stability, housing policies, or investments in affordable housing, though external factors like government programs or economic shocks may also influence the trend.
+
+## Boston Homelessness Analysis Using Boston's Fair Housing & Equity
+
+![plot](./images/v_j-figure-12.png)
+
+**Analysis of the Fair Housing & Equity Budget**
+
+The graph illustrates the Fair Housing & Equity Budget from FY22 to FY25, showing a sharp increase from approximately $280,000 in FY22 to $370,000 in FY23. This is followed by a significant decrease to around $310,000 in the FY24 appropriation, and then a moderate rise to $330,000 in the FY25 budget. These fluctuations reflect shifts in funding priorities over the years.
+
+![plot](./images/v_j-figure-13.png)
