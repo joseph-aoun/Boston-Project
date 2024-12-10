@@ -2,6 +2,8 @@
 ### YT Presentation Link: https://youtu.be/VOY79GzFD28
 ### Data Link: https://drive.google.com/drive/folders/19DqIJCp8-4ZRq8dY3uqzIVpVTMs_Ej46?usp=sharing
 
+All the analysis can be found in one merged notebook **final_project.ipynb**. Folder **individual_notebooks** contains all of the separate notebooks created by team memebrs to cover various aspects of the Budget analysis.
+
 ## Operating Budget
 
 The operating budget is the expenses generated to run the government on a day-to-day basis. This dataset contains columns such as Department, Programs, FY22 spending, FY23 Spending, FY24 spending, and the budget for FY25. ‘FY’ in this case refers to Fiscal Year, which means a one year period that the government or other organization used for financial reporting. When looking at this dataset, there was a lot of missing data (seen as ‘#Missing’ in the operating budget, which was replaced by 0). Some programs have missing data for the fiscal year of FY22 - FY24. We removed them for this visualization.
