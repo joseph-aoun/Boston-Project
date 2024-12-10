@@ -4,6 +4,12 @@
 
 All the analysis can be found in one merged notebook **final_project.ipynb**. Folder **individual_notebooks** contains all of the separate notebooks created by team memebrs to cover various aspects of the Budget analysis.
 
+In order to reproduce the results:
+
+1. Run **make install** to install dependencies for the project, including all the data files.
+2. Run **make run** to produce a notebook containing all of our analysis.
+3. The output notebook is going to be stored as **output.ipynb**. Our original notebook constructed by the team members is stored as **final_project.ipynb**. The two are identical in their contents. 
+
 ## Operating Budget
 
 The operating budget is the expenses generated to run the government on a day-to-day basis. This dataset contains columns such as Department, Programs, FY22 spending, FY23 Spending, FY24 spending, and the budget for FY25. ‘FY’ in this case refers to Fiscal Year, which means a one year period that the government or other organization used for financial reporting. When looking at this dataset, there was a lot of missing data (seen as ‘#Missing’ in the operating budget, which was replaced by 0). Some programs have missing data for the fiscal year of FY22 - FY24. We removed them for this visualization.
