@@ -1,4 +1,4 @@
-# CS 506 Boston Budget Final Project
+# Boston Budget Project
 ### YT Presentation Link: https://youtu.be/VOY79GzFD28
 ### Data Link: https://drive.google.com/drive/folders/19DqIJCp8-4ZRq8dY3uqzIVpVTMs_Ej46?usp=sharing
 
